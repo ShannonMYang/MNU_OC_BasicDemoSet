@@ -49,6 +49,9 @@
 //    view0.layer.masksToBounds = YES;
     
     view0.layer.contentsRect = CGRectMake(0, 0, 1, 1);  // 意味着这个寄宿图都是可见的，如果是{0, 0, 0.5, 0.5}，则是局部可见。
+    
+    // 边框是跟随图层的边界变化的，而不是图层里面的内容
+//    view0.layer.borderWidth = 5.f;
 }
 
 @end
